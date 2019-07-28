@@ -1,0 +1,57 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(121, 121, 121);
+    color: white;
+    text-align: center;
+    min-height:100vh;
+    background-image: url(images/drum-background.jpg);
+    background-size: cover;
+
+  }
+
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .drum-holder{
+      width: 90%;
+      min-height:100vh;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap
+  }
+
+  .drum-item{
+      width: 100px;
+      height: 100px;
+      background-color: rgba(34, 34, 34, 0.7);
+      border-radius:5px;
+      border: 2px black solid;
+      margin:10px;
+  }
+  .drum-description{
+      color: orange;
+      height:30px;
+  }
+
+  .drum-clicked{
+    border-color: orange;
+    transform: scale(1.1);
+  }
+
+  .letter{
+      font-size:40px;
+      color: white;
+      padding: 10px 0 0 0;
+      height:60px;
+  }

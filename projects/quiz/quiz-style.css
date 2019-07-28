@@ -1,0 +1,109 @@
+/*QUIZ PAGE*/
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  padding: 10px;
+  margin: 0;
+}
+.quiz-body{
+  background-color: rgb(34, 34, 34);
+  color:white;
+}
+
+.title-box{
+  display: block;
+  /* height: 160px; */
+  width:90vw;
+  max-width: 470px;
+  margin:auto;
+  text-align: center;
+  padding:0 0 20px 0;
+}
+h1{
+  padding:0;
+  margin:0;
+}
+
+#question{
+  font-size: 28px;
+  text-align: center;
+}
+#top-gear-logo{
+height: 80px;
+}
+.image-holder{
+  width:200px;
+  margin:auto;
+}
+
+.quiz-box{
+  width: 90vw;
+  max-width:470px;
+  margin:auto;
+  background-color: rgb(34,34,34);
+  padding: 0 0 10px 0;
+  border: 2px solid white;
+}
+
+.question-container{
+  min-height:140px;
+  width: 100%;
+}
+.answer-container{
+  width: 86vw;
+  height: 500px;
+  max-width:450px;
+  margin: auto auto auto auto;
+  background-image: url(images/top-gear-cast.jpg);
+  background-color: rgb(34,34,34);
+  background-size: cover;
+  border: 2px white solid;
+  background-position: center;
+
+}
+#buttons{
+visibility: hidden;
+}
+
+.answer-button{
+  width:100%;
+  margin: auto auto auto auto;
+  height: 25%;
+  background: none;
+  border:none;
+  outline: none;
+  font-size: 24px;
+  color:white;
+}
+
+.answer-button:hover{
+  background-color: rgb(54, 54, 54);
+}
+#buttons{
+  height:100%;
+}
+
+.btn-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start-button{
+  width: 180px;
+  height:40px;
+  background-color: rgb(34,34,34);
+  border: none;
+  font-size: 20px;
+  color:white;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+#start-button:hover{
+  background-color: rgb(54, 54, 54);
+}
