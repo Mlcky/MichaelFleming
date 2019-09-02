@@ -1,0 +1,288 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  background: #e6f4f1;
+  text-align: center;
+  max-width: 100vw;
+  color: black;
+}
+p {
+  font-size: x-large;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+.home {
+  min-height: calc(100vh - 50px);
+  background: #5ca0a7;
+  color: white;
+}
+
+.about {
+  min-height: 100vh;
+  border-bottom: 2px solid #9ce1e8;
+  width: 80%;
+  margin: auto;
+}
+
+.about-text {
+  max-width: 750px;
+  margin: auto;
+  text-align: left;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  padding: 50px 0 50px 0;
+}
+
+.home-text {
+  margin: auto auto auto auto;
+  color: white;
+  width: 80%;
+  padding: 35vh 0 0 0;
+}
+
+.header-1 {
+  background: #ff8b42;
+  max-width: 500px;
+  margin: auto;
+}
+
+.header-1 h1 {
+  margin: 0 0 40px 0;
+  color: white;
+  font-size: 2.5em;
+}
+
+.header-1 h2 {
+  margin: 0 0 40px 0;
+  color: white;
+  font-size: 2em;
+}
+
+.contact {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  border-bottom: 2px solid #9ce1e8;
+}
+
+.contact-message {
+  padding: 8px;
+}
+
+/* NAVIGATION */
+
+.logo-p {
+  text-align: left;
+  margin: 0 0 0 40px;
+  color: white;
+  padding: 0;
+  float: left;
+}
+
+.navigation-bar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #324b4e;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  float: right;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-li {
+  background: #324b4e;
+  padding: 0 40px 0 0;
+  display: inline;
+}
+
+#nav-bar {
+  display: block;
+}
+
+.burger-holder {
+  display: none;
+  float: right;
+  padding: 7px 20px 13px 20px;
+  margin: 0;
+}
+
+.burger-holder:hover {
+  background: #ff8b42;
+}
+
+/* PROJECTS */
+.projects {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  border-bottom: 2px solid #9ce1e8;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  max-height: 350px;
+  max-width: 300px;
+  padding:5px;
+  margin:10px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #9ce1e8;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.project-box:hover .project-img {
+  -webkit-transform:scale(1.15); /* Safari and Chrome */
+  -moz-transform:scale(1.15); /* Firefox */
+  -ms-transform:scale(1.15); /* IE 9 */
+  -o-transform:scale(1.15); /* Opera */
+   transform:scale(1.15);
+}
+
+.project-img-holder {
+  overflow: hidden;
+}
+
+.project-box img {
+  height: 200px;
+  width: 300px;
+  display: block;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.project-box-link {
+  text-decoration: none;
+  border: none;
+  color: #333;
+  padding: 6px;
+  width: 124px;
+  margin: 5px ;
+  background-color: rgb(236, 236, 236);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-box h4 {
+  color: #333;
+  padding: 8px 0 4px 0;
+  margin: 0;
+}
+
+.project-box h5 {
+  font-size: medium;
+  color: #a5a5a5;
+  padding: 0;
+  margin: 0;
+}
+
+.project-box p {
+  font-size: medium;
+  color: #333;
+  padding: 4px;
+}
+
+form {
+  display: block;
+  text-align: left;
+  font-size: x-large;
+}
+.form-div {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="submit"] {
+  background-color: #5ca0a7;
+  color: white;
+  font-size: 1em;
+  padding: 4px 8px 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 625px) {
+  .header-1 h1 {
+    font-size: 2em;
+  }
+
+  .burger-holder {
+    display: block;
+  }
+
+  .burger {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0 0 0;
+  }
+
+  #nav-bar {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links {
+    min-width: 100%;
+  }
+
+  .nav-li {
+    display: block;
+    padding: 0 0 0 40px;
+  }
+
+  .nav-li:hover {
+    background: #ff8b42;
+    transition: color 0.5s ease-out;
+  }
+}

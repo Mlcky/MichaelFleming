@@ -17,196 +17,227 @@
 </head>
 
 <!-- Detects the change in screen width and updates the navigation links -->
+
 <body onresize="navigationResize()">
-  <header id="header">
-    <div class="navigation-bar">
-      <p class="logo-p">Michael Fleming</p>
-      <div class="burger-holder" onclick="navigationOpen()">
-        <div class="burger"></div>
-        <div class="burger"></div>
-        <div class="burger"></div>
-      </div>
-      <nav id="nav-bar">
-        <ul class="nav-links">
-          <a href="#about" class="nav-link">
-            <li class="nav-li">About Me</li>
-          </a>
-          <a href="#projects" class="nav-link">
-            <li class="nav-li">Projects</li>
-          </a>
-          <a href="#contact" class="nav-link">
-            <li class="nav-li">Contact</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
   <div class="home" id="home">
+    <header id="header">
+      <div class="navigation-bar">
+        <div class="burger-holder" onclick="navigationOpen()">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </div>
+        <nav id="nav-bar">
+          <ul class="nav-links">
+            <a href="body" class="smooth-scroll">
+              <li class="nav-li">home</li>
+            </a>
+            <a href="#about" class="smooth-scroll">
+              <li class="nav-li">about</li>
+            </a>
+            <a href="#projects" class="smooth-scroll">
+              <li class="nav-li">projects</li>
+            </a>
+            <a href="#contact" class="smooth-scroll">
+              <li class="nav-li">contact</li>
+            </a>
+          </ul>
+      </div>
+      </nav>
+    </header>
+
     <div class="home-text">
-      <div class="header-1">
-        <h1>I'm Michael</h1>
-      </div>
-      <div class="header-1">
-        <h1>I make websites</h1>
-      </div>
+      <h1>Michael Fleming</h1>
+      <h2>Design <span>&</span> Development</h2>
     </div>
+    <div class="arrow-holder">
+      <a class="smooth-scroll" href="#about">
+        <div class="arrow-border">
+          <div class="arrow-inner"></div><img src="images/arrow.png">
+        </div>
+    </div></a>
+  </div>
   </div>
 
   <div class="about" id="about">
-    <div class="content">
-      <div>
-        <div class="header-1">
-          <h2 class="page-title">About Me</h2>
-        </div>
-        <div class="about-text">
-          <p>
-            My name is Michael Fleming, i'm 24 years old and currently living
-            in Newcastle Upon Tyne.<br /><br />
-            This is my website where i plan on showcasing my work and learning
-            as i persue my dream job as a website developer.<br /><br />
-            If you would like to see what im working on check out my projects.
-            <br /><br /><strong>Like what you see?<br />Get in touch.</strong>
-          </p>
+    <div class="header">
+      <h3 class="page-title">about</h3>
+    </div>
+    <div class="underline"></div>
 
-          <p></p>
+
+    <div class="about-container">
+      <div class="about-left">
+        <img class="img-me" src="images/me.jpg">
+      </div>
+      <div class="about-right">
+        <div class="about-text">
+          <h4>Hi I'm Michael</h4>
+          <p>This is my website where I will showcase my projects as I pursue a career in web development.</p>
         </div>
       </div>
+      <div class="skills-bar-div">
+        <p>How i rate my current skillset</p>
+        <img class="skills-bar" src="images/skillsBar.png">
+      </div>
     </div>
+  </div>
+
+  <div class="tri-holder">
+    <div class="bottom-page"></div>
   </div>
 
   <div class="projects" id="projects">
-    <div class="content">
-      <div class="header-1">
-        <h2 class="page-title">Projects</h2>
+    <div class="header">
+      <h3 class="page-title">projects</h3>
+    </div>
+    <div class="underline"></div>
+    <div class="project-container">
+
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/portfolio.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Web Dev Portfolio</strong>
+          </h4>
+          <h5 class="project-subtitle">My old website</h5>
+          <p class="project-description">Fully responsive with burger menu</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/"><button class="project-box-link">GitHub
+            Code</button></a>
+        <a href="projects/portfolio/portfolio.html"><button class="project-box-link">Live Site</button></a>
       </div>
 
-      <div class="project-container">
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/background1.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Ristorante Di Casa</strong>
+          </h4>
+          <h5 class="project-subtitle">Italian Restaurant</h5>
+          <p class="project-description">still a work in progress.</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/projects/ristorantedicasa"><button
+            class="project-box-link">GitHub Code</button></a>
+        <a href="projects/RistoranteDiCasa/home.html"><button class="project-box-link">Live Site</button></a>
+      </div>
 
-        <a class="project-box-link" href="projects/RistoranteDiCasa/home.html">
-          <div class="project-box">
-            <div class="project-img-holder">
-              <img class="project-img" src="images/background1.jpeg" />
-            </div>
-            <div class="project-box-text">
-              <h4 class="project-title">
-                <strong>Ristorante Di Casa</strong>
-              </h4>
-              <h5 class="project-subtitle">Italian Restaurant</h5>
-              <p class="project-description">still a work in progress.</p>
-            </div>
-          </div>
-        </a>
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/drumkit.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Interactive Drumkit</strong>
+          </h4>
+          <h5 class="project-subtitle">Press your keys or onscreen</h5>
+          <p class="project-description">Turn on your volume</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/projects/drumkit"><button
+            class="project-box-link">GitHub Code</button></a>
+        <a href="projects/drumkit/drumkit.html"><button class="project-box-link">Live Site</button></a>
+      </div>
 
-        <a class="project-box-link" href="projects/juice/juice.html">
-          <div class="project-box">
-            <div class="project-img-holder">
-              <img class="project-img" src="images/juice.png" />
-            </div>
-            <div class="project-box-text">
-              <h4 class="project-title">
-                <strong>juice.</strong>
-              </h4>
-              <h5 class="project-subtitle">A website about juice</h5>
-              <p class="project-description">Design spec from YouTuber Dev Ed</p>
-            </div>
-          </div>
-        </a>
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/top-gear-quiz.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Top Gear Quiz</strong>
+          </h4>
+          <h5 class="project-subtitle">Multiple Choice questionnaire</h5>
+          <p class="project-description">still a work in progress.</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/projects/quiz"><button
+            class="project-box-link">GitHub Code</button></a>
+        <a href="projects/quiz/quiz.html"><button class="project-box-link">Live Site</button></a>
+      </div>
 
-        <a class="project-box-link" href="projects/drumkit/drumkit.html">
-            <div class="project-box">
-              <div class="project-img-holder">
-                <img class="project-img" src="images/drumkit.png" />
-              </div>
-              <div class="project-box-text">
-                <h4 class="project-title">
-                  <strong>Interactive Drumkit</strong>
-                </h4>
-                <h5 class="project-subtitle">Press your keys or onscreen</h5>
-                <p class="project-description">Turn on your volume</p>
-              </div>
-            </div>
-          </a>
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/clock.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Clock</strong>
+          </h4>
+          <h5 class="project-subtitle">Its a clock</h5>
+          <p class="project-description">It tells the time</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/projects/clock"><button
+            class="project-box-link">GitHub Code</button></a>
+        <a href="projects/clock/clock.html"><button class="project-box-link">Live Site</button></a>
+      </div>
 
-          <a class="project-box-link" href="projects/quiz/quiz.html">
-              <div class="project-box">
-                <div class="project-img-holder">
-                  <img class="project-img" src="images/Stig.png" />
-                </div>
-                <div class="project-box-text">
-                  <h4 class="project-title">
-                    <strong>Top Gear Quiz</strong>
-                  </h4>
-                  <h5 class="project-subtitle">Multiple Choice questionnaire</h5>
-                  <p class="project-description">still a work in progress.</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project-box-link" href="projects/clock/clock.html">
-                <div class="project-box">
-                  <div class="project-img-holder">
-                    <img class="project-img" src="images/clock.png" />
-                  </div>
-                  <div class="project-box-text">
-                    <h4 class="project-title">
-                      <strong>Clock</strong>
-                    </h4>
-                    <h5 class="project-subtitle">Its a clock</h5>
-                    <p class="project-description">It tells the time</p>
-                  </div>
-                </div>
-              </a>
-
-              <a class="project-box-link" href="projects/sliders/sliders.html">
-                  <div class="project-box">
-                    <div class="project-img-holder">
-                      <img class="project-img" src="images/sliders.png" />
-                    </div>
-                    <div class="project-box-text">
-                      <h4 class="project-title">
-                        <strong>Css Sliders</strong>
-                      </h4>
-                      <h5 class="project-subtitle">Change the images CSS with sldiesrs</h5>
-                      <p class="project-description">more sliders to come!</p>
-                    </div>
-                  </div>
-                </a>
+      <div class="project-box">
+        <div class="project-img-holder">
+          <img class="project-img" src="images/sliders.jpg" />
+        </div>
+        <div class="project-box-text">
+          <h4 class="project-title">
+            <strong>Css Sliders</strong>
+          </h4>
+          <h5 class="project-subtitle">Change the images CSS with sldiers</h5>
+          <p class="project-description">more sliders to come!</p>
+        </div>
+        <a href="https://github.com/Mlcky/Website-Portfolio/tree/master/projects/sliders"><button
+            class="project-box-link">GitHub Code</button></a>
+        <a href="projects/sliders/sliders.html"><button class="project-box-link">Live Site</button></a>
       </div>
     </div>
   </div>
+  </div>
+  </div>
 
+
+  <div class="tri-holder contact">
+    <div class="bottom-page" id="bottom-page-2"></div>
+  </div>
   <div class="contact" id="contact">
-    <div class="content">
-      <div class="header-1">
-        <h2 class="page-title">Contact</h2>
-      </div>
-      <div class="contact-message">
-        <p>
-          Send me a message or contact me through
-          <a href="https://www.linkedin.com/in/michael-fleming-063b08176/" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-      <div class="contact-form">
-        <form name="contact-form" data-netlify="true" action="#contact">
-          <div class="form-div">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="form-div">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div class="form-div">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" style="height:200px"></textarea>
-          </div>
-          <div class="form-div">
-            <input type="submit" value="Send" onclick="formSubmission()" />
-          </div>
-        </form>
+    <div class="header">
+      <h3 class="page-title">contact</h3>
+    </div>
+    <div class="underline"></div>
+    <p>Any questions or fancy a chat?</p>
+    <div class="contact-form">
+      <form name="contact-form" data-netlify="true" action="#contact">
+        <div class="form-div">
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+        <div class="form-div">
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-div">
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="form-div">
+          <input type="submit" value="submit" onclick="formSubmission()" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-div">
+      <div>
+        <a href="https://www.linkedin.com/in/michael-fleming-063b08176" target="_blank"><img class="footer-img-left"
+            src="images/linkedin-logo.png"></a>
+        <a href="mailto:michaelfleming95@gmail.com"><img class="footer-img-right" src="images/email-logo.png"></a>
+        <div>
+        </div>
+        <p>Michael Fleming ©2019</p>
       </div>
     </div>
   </div>
+
+
+
 </body>
 
 </html>

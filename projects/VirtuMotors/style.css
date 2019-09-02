@@ -1,0 +1,619 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	margin: auto;
+	max-width: 1440px;
+	width: 90%;
+	background: #efefef;
+	font-family: "Roboto";
+}
+body {
+	background: white;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.logo {
+	width: 205px;
+	height: 60px;
+	padding: 20px 35px 20px 35px;
+	float: left;
+	background: white;
+}
+.page-header {
+	height: 34px;
+	line-height: 34px;
+	text-align: right;
+	font-size: small;
+}
+.page-header * {
+	display: inline;
+}
+.page-header-div {
+	padding: 0 16px 0 16px;
+}
+.accessibility-button {
+	font-weight: bold;
+	padding: 3px;
+	border: 1px solid #cccccc;
+	color: #3b2f83;
+}
+.black-yellow {
+	color: yellow;
+	background-color: black;
+}
+.green-background {
+	height: 34px;
+	width: 215px;
+	float: right;
+	padding: 0;
+	background-color: #33a75d;
+	color: white;
+	text-align: center;
+}
+i {
+	padding: 0 5px 0 5px;
+}
+ul li {
+	display: inline-block;
+}
+.burger-holder {
+	display: none;
+	float: right;
+	width: 35px;
+	height: 39px;
+	padding: 13px;
+}
+.burger-div {
+	width: 35px;
+	height: 5px;
+	background-color: #133d77;
+	margin: 6px 0;
+}
+.burger-2 {
+	background-color: #ffffff;
+}
+nav {
+	font-size: medium;
+	font-weight: 600;
+}
+.navigation-1 {
+	height: 66px;
+	line-height: 66px;
+}
+#nav-list-1 {
+	display: flex;
+	justify-content: space-evenly;
+}
+.navigation-2 {
+	height: 70px;
+	line-height: 70px;
+	background-color: #133d77;
+	color: white;
+}
+#model-name {
+	/* display: inline; */
+	float: left;
+}
+/* .navigation-2 ul {
+  float: right;
+} */
+
+.navigation-2 p {
+	font-size: large;
+	padding: 0 40px 0 40px;
+}
+.navigation-2 li {
+	padding: 0 60px 0 0;
+}
+#nav-list-2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+.background-img {
+	height: 525px;
+	background-size: 1440px 525px;
+	background-position: right 0;
+	background-image: url("https://www.bristolstreetversa.com/custom/51650.jpg");
+}
+.mobile-enquiry-box {
+	display: none;
+}
+.enquiry-box {
+	padding: 97px 0 97px 10%;
+}
+.enquiry-box-content {
+	width: 300px;
+	height: 260px;
+	padding: 35px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.enquiry-box-content h1 {
+	font-size: xx-large;
+	font-weight: bolder;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+.enquiry-box-content p {
+	padding: 0 0 10px 0;
+	line-height: 24px;
+}
+.button-style {
+	font-size: medium;
+	font-weight: bold;
+	background-color: #2d7cda;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 270px;
+	height: 40px;
+	margin: auto;
+	cursor: pointer;
+}
+.enquiry-box-content button {
+	height: 55px;
+	width: 300px;
+}
+.button-bar {
+	display: flex;
+	height: 40px;
+	width: 80%;
+	border-radius: 4px;
+	margin: 50px auto 50px auto;
+	color: #133d77;
+}
+.bar-buttons {
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #7b97b7;
+	cursor: pointer;
+}
+.button-left {
+	border-radius: 4px 0 0 4px;
+}
+.button-right {
+	border-radius: 0 4px 4px 0;
+}
+.button-clicked {
+	color: white;
+	background-color: #133d77;
+}
+.content-holder {
+	width: 80%;
+	min-height: 400px;
+	margin: auto;
+}
+.left-half {
+	width: 50%;
+	float: left;
+}
+.right-half {
+	width: 50%;
+	float: right;
+}
+.right-half img {
+	width: 100%;
+	height: auto;
+}
+.button-holder {
+	width: 270px;
+	padding: 50px 0 50px 0;
+	margin: auto;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	height: 100%;
+	border-bottom: 1px solid #afb2b3;
+}
+.grid-item {
+	background-color: white;
+	border-top: 1px solid #afb2b3;
+	border-right: 1px solid #afb2b3;
+	line-height: 56px;
+	text-align: left;
+	padding: 0 0 0 20px;
+}
+.item1 {
+	border: none;
+	font-weight: bold;
+}
+.item2 {
+	background-color: #e5e8e8;
+	border-left: 1px solid #afb2b3;
+}
+.layout-img {
+	width: 100%;
+	height: auto;
+}
+#vehicle-layouts {
+	display: none;
+}
+#color {
+	display: none;
+}
+#interior-trim {
+	display: none;
+}
+.color {
+	width: 80%;
+	margin: auto;
+}
+.color-img {
+	width: 100%;
+}
+.color-swatch {
+	max-width: 720px;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.color-item {
+	border-radius: 100%;
+	border: 2px solid white;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	background-color: red;
+	margin: 0 6px 0 6px;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.11);
+	box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.11);
+}
+#color-red {
+	background-color: #b31e1c;
+}
+#color-black {
+	background-color: #000000;
+}
+#color-blazer-blue {
+	background-color: #272938;
+}
+#color-deep-impact-blue {
+	background-color: #49578e;
+}
+#color-guard {
+	background-color: #6a706b;
+}
+#color-magnetic {
+	background-color: #767471;
+}
+#color-metalicious {
+	background-color: #9c9d90;
+}
+#color-silver {
+	background-color: #c7c9cd;
+}
+#color-solar {
+	background-color: #c6bc75;
+}
+.interior-main-img {
+	width: 100%;
+	height: auto;
+}
+.interior-options-div {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.interior-color {
+	width: 30%;
+	min-width: 215px;
+	padding: 10px 0 20px 0;
+}
+.interior-img {
+	width: 100%;
+	height: auto;
+}
+.interior-text-div {
+	width: 75%;
+	float: left;
+}
+.interior-text {
+	padding: 6px 0 0 0;
+}
+.interior-text-title {
+	font-weight: bold;
+	padding: 12px 0 6px 0;
+}
+.checkbox-div {
+	width: 33px;
+	height: 34px;
+	float: right;
+	padding: 30px 0 0 0;
+}
+/* The container */
+
+.checkbox-container {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default checkbox */
+
+.checkbox-container input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+
+.checkmark {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #707070;
+}
+/* When the checkbox is checked, add a blue background */
+
+.checkbox-container input:checked~.checkmark {
+	background-color: #a8b0b7;
+	border: 1px solid #a8b0b7;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+
+.checkbox-container input:checked~.checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+
+.checkbox-container .checkmark:after {
+	left: 10px;
+	top: 3px;
+	width: 8px;
+	height: 16px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.gallery {
+	max-width: 1440px;
+	height: 100%;
+	position: relative;
+}
+.gallery img {
+	max-width: 100%;
+	height: auto;
+}
+.arrow-holder {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.gallery-arrow {
+	border: solid white;
+	border-width: 0 8px 8px 0;
+	display: inline-block;
+	padding: 16px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.gallery-right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.gallery-left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+.arrow-left {
+	left: 20px;
+}
+.arrow-right {
+	right: 20px;
+}
+.image-count-div {
+	width: 48px;
+	margin: auto;
+}
+.image-count {
+	text-align: center;
+	width: 1140px;
+	position: absolute;
+	width: 40px;
+	background-color: #000000;
+	border-radius: 20px;
+	padding: 4px;
+	bottom: 10px;
+	color: #ffffff;
+}
+.description {
+	background-color: #efefef;
+}
+.description-text {
+	width: 80%;
+	margin: auto;
+	padding: 50px 0 0 0;
+	line-height: 24px;
+}
+.background-img-2 {
+	background-image: url("https://www.bristolstreetversa.com/custom/51651.jpg");
+}
+.enquiry-box-2 {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.enquiry-box-content-2 {
+	height: 305px;
+}
+.footer {
+	min-height: 280px;
+	overflow: auto;
+	background-color: #43484d;
+	color: white;
+}
+.footer-left-half {
+	width: 50%;
+	float: left;
+}
+.footer-right-half {
+	width: 50%;
+	float: right;
+}
+.content-left {
+	padding: 60px 20% 60px 20%;
+	font-size: small;
+	opacity: 0.6;
+}
+.footer-links {
+	font-size: large;
+	padding: 60px 0 60px 0;
+}
+.footer-link li {
+	display: inline-block;
+	min-width: 200px;
+	height: 40px;
+}
+@media only screen and (max-width: 1250px) {
+	html {
+		width: 100%;
+	}
+	.left-half {
+		float: none;
+		width: 100%;
+	}
+	.right-half {
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.page-header {
+		display: none;
+	}
+	.logo {
+		padding: 0;
+	}
+	.interior-options-div {
+		justify-content: space-evenly;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.navigation-1 {
+		min-height: 66px;
+		height: 100%;
+		background-color: white;
+	}
+	#nav-list-1 {
+		display: none;
+	}
+	.navigation-1 ul li {
+		display: block;
+		padding: 0 0 0 20px;
+	}
+	.navigation-1 .burger-holder {
+		display: block;
+	}
+	.enquiry-box {
+		padding-left: 0;
+		width: 370px;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.navigation-2 .burger-holder {
+		display: block;
+	}
+	.navigation-2 {
+		min-height: 70px;
+		height: 100%;
+		background-color: #133d77;
+	}
+	#nav-list-2 {
+		display: none;
+		width: 100%;
+	}
+	.navigation-2 ul li {
+		display: block;
+		padding: 0 0 0 20px;
+	}
+	#enquiry-box-1 {
+		display: none;
+	}
+	#enquiry-box-2 {
+		display: none;
+	}
+	.background-img {
+		width: auto;
+		height: 300px;
+		background-size: cover;
+	}
+	.mobile-enquiry-box {
+		background-color: #eeeff1;
+		display: block;
+	}
+	.enquiry-box {
+		padding: 50px 0 50px 0;
+	}
+	.color {
+		width: 100%;
+		/* margin: auto; */
+	}
+}
+@media only screen and (max-width: 600px) {
+	.button-bar {
+		display: flex;
+		width: 90%;
+		height: auto;
+		flex-wrap: wrap;
+	}
+	.bar-buttons {
+		width: 40%;
+		margin: 10px auto 10px auto;
+		display: inline-block;
+		border-radius: 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.background-img {
+		height: 200px;
+	}
+	.enquiry-box {
+		width: 80%;
+		height: auto;
+		max-width: 370px;
+		margin: auto;
+	}
+	.enquiry-box-content {
+		width: auto;
+		height: 100%;
+		max-width: 370px;
+	}
+	.enquiry-box-content button {
+		width: 100%;
+	}
+	.grid-container {
+		font-size: small;
+		text-align: center;
+	}
+	.grid-item {
+		padding: 0 4px 0 4px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.bar-buttons {
+		font-size: small;
+	}
+}
