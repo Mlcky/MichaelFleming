@@ -42,13 +42,13 @@ if ($_SESSION["loggedIn"] != "admin") {
     <h1>WearCare</h1>
     <p>Viewing all of the registered patients</p>
     <p>You can search for specific patients or filter results here</p>
-    <form>
+    <form method="GET">
     <label for="firstname">Firstname: </label>    
     <input type="text" name="firstname" id="firstname">
     <label for="surname">Surname: </label>    
     <input type="text" name="surname" id="surname">
     <label for="practice">Practice</label>
-    <input type="text" name="practice:" id="practice">
+    <input type="text" name="practice" id="practice">
     <button onclick(updateResults)>Search</button>
     </form>
     <hr>
@@ -66,11 +66,23 @@ if ($_SESSION["loggedIn"] != "admin") {
             // Thought that the best option for adding search functionality would be in the update/delete page as opposed to a seperate page 
             // as it provides not only the funcitonality to search and view the data but also to allow for easier updating or deletion of the records
 
+            $firstname = "";
+            $surname = "";
+            $practice = "";
 
             // Get the variables from the GET request
-            $firstname = $_GET['firstname'];
-            $surname = $_GET['surname'];
-            $practice = $_GET['practice'];
+            if(array_key_exists('firstname', $_GET)){
+                $firstname = $_GET['firstname'];
+            }
+            if(array_key_exists('surname', $_GET)){
+                $surname = $_GET['surname'];
+            }            
+            if(array_key_exists('practive', $_GET)){
+                $practice = $_GET['practice'];
+            }
+
+            
+            
 
             //Start the sql statement
             $sqlString = "SELECT * from patients ";
@@ -99,10 +111,11 @@ if ($_SESSION["loggedIn"] != "admin") {
 
             $sqlString .= "ORDER BY id DESC";
 
+            $result = $conn->query($sqlString);
             //For each result that we return, loop through the result and perform the echo statements.
             //$row is an array with the fields for each record returned from the SELECT
-                foreach($conn->query($sqlString, PDO::FETCH_ASSOC) as $row){
-                    
+            if($result->rowCount() > 0){
+                while($row = $result->fetch(PDO::FETCH_ASSOC)){    
                     //TODO
                     //show all patient info here
                     echo 'Patient ID: '.$row['id'].'<br>';
@@ -121,8 +134,10 @@ if ($_SESSION["loggedIn"] != "admin") {
                     echo '<a href="delete_patient.php?patient_id='.$row['id'].'" class="dbutton" onclick="return confirm(\'Are you sure you want to delete this patient?\');">Delete this patient</a>';
                     echo '<hr><br>';
                 }
-            
+            } else {
+                echo "0 results";
             }
+        }
         catch(PDOException $e)
             {
             echo $sql . "<br>" . $e->getMessage(); //If we are not successful we will see an error
@@ -132,20 +147,3 @@ if ($_SESSION["loggedIn"] != "admin") {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Made you look-->
